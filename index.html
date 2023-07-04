@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portail des apprenants</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="ma-div">
+        <div  id="err"></div>
+        <form action="traitement.php" method="POST" id="apprenantForm" enctype="multipart/form-data">
+            <h1>Enregistrement des apprenants</h1>
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom" >
+
+            <label for="prenom">Prenom :</label>
+            <input type="text" name="prenom" id="prenom" ><br>
+
+            <label for="age">Age :</label>
+            <input type="number" name="age" id="age" ><br>
+            <label for="date">Date de naissance :</label>
+            <input type="date" name="date" id="date" ><br>
+
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" name="email" id="email" required><br>
+
+            <label for="numero">Numero de telephone  :</label>
+            <input type="number" name="numero" id="numero" value="58698745" required><br>
+            <label for="photo">Photo :</label>
+            <input type="file" id="photo" name="photo"><br><br>
+            <label for="promos">Promotion :</label>
+            <select id="promos" name="promos">
+                <option value="P1"> ODK_P1 </option>
+                <option value="P2">ODK_P2</option>
+                <option value="P3">ODK_P3</option>
+            </select><br>
+
+            <label for="annee">Anne de certification:</label>
+             <input type="date" id="annee" name="annee"><br><br>
+
+             <input type="submit" value="Envoyer">
+        </form>
+        
+    </div>
+</body>
+</html>
